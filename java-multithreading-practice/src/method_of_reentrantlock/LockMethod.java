@@ -14,6 +14,7 @@ public class LockMethod {
             System.out.println("Lock Acquired..");
         } finally {
             // release the lock
+            // if forget unlock ---> deadlock
             reentrantLock.unlock();
         }
     }
